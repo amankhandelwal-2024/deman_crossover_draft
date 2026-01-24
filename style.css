@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #1f2937;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  background: #1e3a5f;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Navbar */
+.navbar {
+  background: #0f2747;
+  padding: 15px 0;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(10,30,60,0.9), rgba(10,30,60,0.9)),
+    url("https://images.unsplash.com/photo-1552664730-d307ca884978") center/cover;
+  padding: 90px 0;
+  color: white;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 25px;
+}
+
+/* Services */
+.services {
+  background: #f8f9fb;
+  padding: 50px 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* About */
+/* ABOUT SECTION FIXED PROPORTIONS */
+.about {
+  padding: 70px 0;
+}
+
+.about-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Text takes more space */
+.about-text {
+  flex: 1.2;   /* Bigger than image */
+}
+
+.about-text h2 {
+  font-size: 36px;   /* Bigger heading */
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 17px;   /* Bigger paragraph text */
+  line-height: 1.6;
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+/* Image slightly smaller */
+.about-image {
+  flex: 1; 
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+/* CTA */
+.cta {
+  background: #0f2747;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Responsive */
+@media(max-width:900px) {
+  .service-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .about-flex {
+    flex-direction: column;
+  }
+}
+
+@media(max-width:600px) {
+  nav {
+    display: none;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
