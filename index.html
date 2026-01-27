@@ -3,80 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DG - Digital Solutions</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Demand Crossover</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- NAVBAR -->
 <header class="navbar">
   <div class="container nav-flex">
-    <div class="logo">DG</div>
+    <div class="logo">DC</div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-      <a href="#" class="btn small">Get in Touch</a>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#whyus">Why Us</a>
+      <a href="#contact" class="btn small">Get in Touch</a>
     </nav>
   </div>
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="home">
   <div class="container hero-flex">
     <div class="hero-text">
-      <h1>We Build Scalable<br>Digital Solutions</h1>
-      <p>Consulting, Design, Development, Staffing.</p>
-      <a href="#" class="btn">Get in Touch</a>
+      <h1>We Build Scalable <br>Business & Digital Solutions</h1>
+      <p>Staffing • Consulting • Product Development • Design</p>
+      <a href="#contact" class="btn">Get in Touch</a>
     </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services">
-  <div class="container service-grid">
-
-    <div class="service-card">
-      <div class="icon">💬</div>
-      <h3>Consulting</h3>
-      <p>Business Consulting & Technology Consulting</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">⚙️</div>
-      <h3>Product</h3>
-      <p>Product development and digital transformation.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🎨</div>
-      <h3>Design Studio</h3>
-      <p>Creative UI/UX design for modern businesses.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">👥</div>
-      <h3>Staffing</h3>
-      <p>Skilled resources for your growing team.</p>
-    </div>
-
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section class="about" id="about">
   <div class="container about-flex">
 
     <div class="about-text">
-      <h2>About<br>Demand Crossover</h2>
+      <h2>About <br>Demand Crossover</h2>
       <p>
-        Demand Crossover is a dynamic and innovative organisation specialising in Staffing, Recruitment, Consulting, and Product Development.
-         With a mission to empower businesses through talent, technology, and tailored solutions, we help organisations scale efficiently while enabling individuals to unlock their full potential.
-
+        Demand Crossover is a forward-thinking organization specializing in 
+        Staffing, Recruitment, Consulting, Product Development, and Design Services. 
+        We empower businesses through talent, technology, and tailored solutions 
+        to scale efficiently and sustainably.
       </p>
-      <a href="#" class="btn">Get in Touch</a>
+      <a href="#services" class="btn">Explore Services</a>
     </div>
 
     <div class="about-image">
@@ -86,10 +57,163 @@
   </div>
 </section>
 
+<!-- SERVICES OVERVIEW -->
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="section-title">Our Core Services</h2>
 
-<!-- CTA -->
-<section class="cta">
+    <div class="service-grid">
+
+      <a href="#staffing" class="service-card">
+        <div class="icon">👥</div>
+        <h3>Staffing & Recruitment</h3>
+        <p>End-to-end hiring solutions for growing teams.</p>
+      </a>
+
+      <a href="#consulting" class="service-card">
+        <div class="icon">💼</div>
+        <h3>Business Consulting</h3>
+        <p>Strategy & digital transformation execution.</p>
+      </a>
+
+      <a href="#product" class="service-card">
+        <div class="icon">⚙️</div>
+        <h3>Product Development</h3>
+        <p>Scalable and future-ready product engineering.</p>
+      </a>
+
+      <a href="#design" class="service-card">
+        <div class="icon">🎨</div>
+        <h3>Design Studio</h3>
+        <p>Elegant UI/UX & brand experiences.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- STAFFING -->
+<section class="service-detail light-bg" id="staffing">
+  <div class="container service-flex">
+
+    <div class="service-text">
+      <h2>Staffing & Recruitment</h2>
+      <p>
+        We deliver end-to-end hiring solutions — from contract staffing 
+        to executive leadership placements. Using modern sourcing tools 
+        and a vast talent network, we match the right people to the right roles.
+      </p>
+      <ul>
+        <li>Permanent & Contract Staffing</li>
+        <li>Executive & Leadership Hiring</li>
+        <li>Campus Recruitment</li>
+        <li>Workforce Augmentation</li>
+      </ul>
+    </div>
+
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978">
+    </div>
+
+  </div>
+</section>
+
+<!-- CONSULTING -->
+<section class="service-detail dark-bg" id="consulting">
+  <div class="container service-flex reverse">
+
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c">
+    </div>
+
+    <div class="service-text">
+      <h2>Business & Technology Consulting</h2>
+      <p>
+        We guide organizations through complex business challenges and 
+        digital transformation journeys — combining strategic insight 
+        with hands-on execution.
+      </p>
+      <ul>
+        <li>Business Process Optimization</li>
+        <li>IT Strategy & Implementation</li>
+        <li>Data & Analytics Consulting</li>
+        <li>Change Management</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCT -->
+<section class="service-detail light-bg" id="product">
+  <div class="container service-flex">
+
+    <div class="service-text">
+      <h2>Product Development</h2>
+      <p>
+        From idea to launch — we design and build scalable, 
+        secure, and user-centric digital products that power growth.
+      </p>
+      <ul>
+        <li>Product Strategy & Roadmapping</li>
+        <li>Custom Software Development</li>
+        <li>UI/UX Prototyping</li>
+        <li>Cloud & AI Solutions</li>
+      </ul>
+    </div>
+
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998">
+    </div>
+
+  </div>
+</section>
+
+<!-- DESIGN -->
+<section class="service-detail dark-bg" id="design">
+  <div class="container service-flex reverse">
+
+    <div class="service-image">
+      <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?q=80&w=1200&auto=format&fit=crop">
+
+    </div>
+
+    <div class="service-text">
+      <h2>Design Studio</h2>
+      <p>
+        Great brands begin with great design. 
+        Our Design Studio crafts visually stunning, 
+        intuitive, and conversion-focused digital experiences.
+      </p>
+      <ul>
+        <li>Brand Identity & Visual Design</li>
+        <li>UI/UX for Web & Mobile</li>
+        <li>Interactive Prototyping</li>
+        <li>Marketing & Presentation Design</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="whyus" id="whyus">
+  <div class="container">
+    <h2 class="section-title">Why Choose Us</h2>
+
+    <div class="why-grid">
+      <div class="why-card">Industry Expertise Across Domains</div>
+      <div class="why-card">Tailored Business Solutions</div>
+      <div class="why-card">Global Talent Reach</div>
+      <div class="why-card">Commitment to Quality & Integrity</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="cta" id="contact">
   <h2>Let’s discuss how we can help your business grow</h2>
+  <br>
   <a href="#" class="btn">Get in Touch</a>
 </section>
 
