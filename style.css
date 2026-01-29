@@ -244,44 +244,57 @@ nav a {
   box-shadow: 0 5px 20px rgba(0,0,0,0.06);
 }
 
-/* CONTACT */
-.contact-section {
+/* Contact */
+/* CTA SECTION */
+.cta-section {
   background: #0b2447;
   color: white;
   padding: 80px 20px;
   text-align: center;
 }
 
-.contact-section form {
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* MODAL */
+.form-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.form-content {
+  background: #fff;
   max-width: 500px;
-  margin: auto;
-  display: grid;
-  gap: 15px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
 }
 
-.contact-section input,
-.contact-section select,
-.contact-section textarea {
+.form-content input,
+.form-content select,
+.form-content textarea {
+  width: 100%;
   padding: 12px;
+  margin: 8px 0;
   border-radius: 6px;
-  border: none;
-  font-size: 16px;
+  border: 1px solid #ddd;
 }
 
-.contact-section button {
-  background: #19376d;
-  color: white;
-  padding: 14px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 22px;
   cursor: pointer;
 }
-
-.contact-section button:hover {
-  background: #576cbc;
-}
-
 
 /* RESPONSIVE */
 @media(max-width: 900px) {
@@ -290,7 +303,7 @@ nav a {
     grid-template-columns: repeat(2,1fr);
   }
 
-  .about-flex,
+  .about-flex,  
   .service-flex {
     flex-direction: column;
   }
