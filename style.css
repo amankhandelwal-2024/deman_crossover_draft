@@ -245,17 +245,43 @@ nav a {
 }
 
 /* CONTACT */
-.cta {
-  background: #0f2747;
+.contact-section {
+  background: #0b2447;
   color: white;
+  padding: 80px 20px;
   text-align: center;
-  padding: 70px 20px;
 }
 
-.cta h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
+.contact-section form {
+  max-width: 500px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
 }
+
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-section button {
+  background: #19376d;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background: #576cbc;
+}
+
 
 /* RESPONSIVE */
 @media(max-width: 900px) {
@@ -284,3 +310,4 @@ nav a {
     grid-template-columns: 1fr;
   }
 }
+
