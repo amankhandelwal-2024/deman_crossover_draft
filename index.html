@@ -211,11 +211,36 @@
 </section>
 
 <!-- CONTACT -->
-<section class="cta" id="contact">
-  <h2>Let’s discuss how we can help your business grow</h2>
-  <br>
-  <a href="#" class="btn">Get in Touch</a>
-</section>
+<section id="contact" class="contact-section">
+  <h2>Get a Quote</h2>
+  <p>Tell us about your requirement and we’ll get back to you.</p>
 
+  <form action="https://formsubmit.co/khandelwalritesh159@gmail.com" method="POST">
+    
+    <!-- Hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Quote Request - Demand Crossover">
+    <input type="hidden" name="_template" value="table">
+
+    <!-- User Fields -->
+    <input type="text" name="Name" placeholder="Full Name" required>
+    
+    <select name="Service" required>
+      <option value="">Select Service</option>
+      <option>Staffing & Recruitment</option>
+      <option>Business Consulting</option>
+      <option>Product Development</option>
+      <option>Design Studio</option>
+    </select>
+
+    <input type="email" name="Email" placeholder="Email Address" required>
+    <input type="tel" name="Phone" placeholder="Contact Number" required>
+
+    <textarea name="Message" placeholder="Tell us briefly about your requirement"></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
 </body>
 </html>
+
